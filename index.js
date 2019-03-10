@@ -84,6 +84,6 @@ app.post("/trail", (req, res) => {
         });
 });
 
-app.listen(port, () => {
-    console.log("Server listening on port " + port);
+app.listen(process.env.PORT || 8000, () => {
+    console.log(`Server running at port 8000`);
 });
